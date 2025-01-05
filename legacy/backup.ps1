@@ -1,4 +1,4 @@
-# File: legacy/backup_v1.ps1
+# File: legacy/backup.ps1
 
 # PowerShell Backup Script
 

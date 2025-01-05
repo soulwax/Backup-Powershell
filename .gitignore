@@ -118,3 +118,5 @@ assets/manpage/*.gz
 # Logfile
 backup_log.txt
 restore_log.txt
+
+tree.txt

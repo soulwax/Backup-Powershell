@@ -2,15 +2,15 @@
 
 ## tl;dr Legacy means it works.
 
-Open powershell as admin (ctrl+shift+click on terminal or so), navigate to the legacy folder, and run the script with `.\backup_v1.ps1`.
+Open powershell as admin (ctrl+shift+click on terminal or so), navigate to the legacy folder, and run the script with `.\backup.ps1`.
 Take look at the `backup_directories.txt` file to see what directories are being backed up.
-Then adjust the source and destination paths in the [legacy/backup_v1.ps1](backup_v1.ps1) script right at the top.
+Then adjust the source and destination paths in the [legacy/backup.ps1](backup.ps1) script right at the top.
 
-If you are a chad, you use scoop. scoop installs gsudo. If you are a gigachad, you declare `sudo` as an alias for `gsudo` in your PowerShell `$PROFILE`. Then you can run the script with `sudo .\backup_v1.ps1` without opening an admin terminal. 
+If you are a chad, you use scoop. scoop installs gsudo. If you are a gigachad, you declare `sudo` as an alias for `gsudo` in your PowerShell `$PROFILE`. Then you can run the script with `sudo .\backup.ps1` without opening an admin terminal. 
 
 ## Philosophy: what is legacy anyway
 
-Don't mistake this for actual legacy. This is the WORKING version of the backup script. The legacy version is the starting point for me to advance to the v3 version under [backup_v3.ps1](../backup_v3.ps1).
+Don't mistake this for actual legacy. This is the WORKING version of the backup script. The legacy version is the starting point for me to advance to the v3 version under [backup_v0.3.ps1](../backup_v0.3.ps1).
 
 Use **this """legacy""" section before I declare the main folder safe to use.
 
@@ -19,12 +19,12 @@ It still works like a charm for basic backup needs, but lacks the advanced featu
 
 ## Version: v1.0 (Legacy)
 
-The original version (`backup_v1.ps1`) was designed with simplicity in mind, using a straightforward text file for directory listings and minimal configuration options.
+The original version (`backup.ps1`) was designed with simplicity in mind, using a straightforward text file for directory listings and minimal configuration options.
 
 ## Basic Setup
 
 1. Required files:
-   - `backup_v1.ps1` (Main script)
+   - `backup.ps1` (Main script)
    - `backup_directories.txt` (List of directories to backup)
 
 2. Create `backup_directories.txt` with directories to backup:
@@ -37,13 +37,13 @@ Program Files\ImportantApp
 
 3. Run the backup:
 ```powershell
-.\backup_v1.ps1
+.\backup.ps1
 ```
 
 ## Script Parameters
 
 ```powershell
-.\backup_v1.ps1 [-sourceDrive <path>] [-destinationDrive <path>]
+.\backup.ps1 [-sourceDrive <path>] [-destinationDrive <path>]
 ```
 
 Default values:
@@ -105,7 +105,7 @@ Default values:
 
 ## Migration to New Version
 
-If you're using this legacy version, consider upgrading to the latest version (`backup_v3.ps1`) which offers:
+If you're using this legacy version, consider upgrading to the latest version (`backup_v0.3.ps1`) which offers:
 - Configuration file support
 - Wildcard matching
 - Space checking
@@ -124,7 +124,7 @@ This version was designed for:
 
 ## Support Status
 
-This version is no longer maintained. Users should migrate to `backup_v3.ps1` for improved functionality and support.
+This version is no longer maintained. Users should migrate to `backup_v0.3.ps1` for improved functionality and support.
 
 ## Original Syntax Example
 

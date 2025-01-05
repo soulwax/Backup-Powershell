@@ -5,14 +5,14 @@ A robust PowerShell-based backup solution for Windows systems with configuration
 ## Current Version: "v3" 
 
 # HIGHLY UNSAFE. please use the scripts under the [legacy](./legacy/) folder until I say otherwise.
-## You need admin permissions to run any of the scripts. `scoop install gsudo` is a good way to get admin permissions in PowerShell. Then simply run `gsudo .\legacy\backup_v1.ps1` to run the script with admin permissions.
+## You need admin permissions to run any of the scripts. `scoop install gsudo` is a good way to get admin permissions in PowerShell. Then simply run `gsudo .\legacy\backup.ps1` to run the script with admin permissions.
 Beforehand though, set origin and destination paths in the legacy v1 script manually in the header section of the file. Can't miss it.
 
 As for the "new and improved version", right now it's getting way more complicated.
 Reason: I want to support sophisticated config files and wildcards in the source directories. This is a big leap from the simple text file listing in the legacy version.
 
 
-The latest version (`backup_v3.ps1`) introduces several improvements:
+The latest version (`backup_v0.3.ps1`) introduces several improvements:
 - INI-style configuration file support
 - Wildcard path matching for flexible directory selection
 - Preview mode to verify backup selections
@@ -25,7 +25,7 @@ The latest version (`backup_v3.ps1`) introduces several improvements:
 ## Quick Start
 
 1. Download the following files:
-   - `backup_v3.ps1` (Main script)
+   - `backup_v0.3.ps1` (Main script)
    - `backup.conf` (Configuration file)
 
 2. Modify `backup.conf` to specify:
@@ -36,7 +36,7 @@ The latest version (`backup_v3.ps1`) introduces several improvements:
 
 3. Run the backup:
 ```powershell
-.\backup_v3.ps1
+.\backup_v0.3.ps1
 ```
 
 ## Configuration File Format
@@ -73,7 +73,7 @@ D:\Backup\Backup-2025
 ## Command Line Parameters
 
 ```powershell
-.\backup_v3.ps1 [-configFile <path>] [-force] [-whatif]
+.\backup_v0.3.ps1 [-configFile <path>] [-force] [-whatif]
 ```
 
 - `-configFile`: Specify alternate config file (default: backup.conf)
