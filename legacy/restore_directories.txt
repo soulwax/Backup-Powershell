@@ -1,0 +1,6 @@
+Users\
+Users\AppData\Local
+Users\AppData\LocalLow
+Users\AppData\Roaming
+Windows\System32\drivers\etc
+ProgramData
