@@ -4,7 +4,7 @@
 
 param(
     [string]$sourceDrive = "C:\",
-    [string]$destinationDrive = "D:\Backup\Backup-2025")
+    [string]$destinationDrive = "D:\Backup\")
 
 # Function to write log with timestamp
 function Write-Log {

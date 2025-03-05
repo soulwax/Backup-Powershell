@@ -3,7 +3,7 @@
 # PowerShell Restore Script
 
 param(
-    [string]$sourceDrive = "<your destination>",
+    [string]$sourceDrive = "D:\Backup\",
     [string]$destinationDrive = "C:\"
 )
 
